@@ -1,1 +1,1 @@
-Ödev Master branchte bulunmaktadır.
+readme will be add
