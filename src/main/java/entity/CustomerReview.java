@@ -33,13 +33,13 @@ public class CustomerReview {
   private Date reviewDate;
 
   @ManyToOne(fetch = FetchType.LAZY)
-  @JoinColumn(name = "KATEGORI_ID",
+  @JoinColumn(
               foreignKey = @ForeignKey(name = "FK_CustomerReview_User_Id")
   )
   private User user;
 
   @ManyToOne(fetch = FetchType.LAZY)
-  @JoinColumn(name = "KATEGORI_ID",
+  @JoinColumn(
               foreignKey = @ForeignKey(name = "FK_CustomerReview_Product_Id")
   )
   private Urun product;
