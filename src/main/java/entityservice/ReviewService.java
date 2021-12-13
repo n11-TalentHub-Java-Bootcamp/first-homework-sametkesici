@@ -5,6 +5,7 @@ import dto.CountOfProductReviewsDto;
 import dto.ProductReviewDto;
 import dto.UserReviewsDto;
 import java.util.List;
+import uygulamalar.CountOfReviewsApp;
 
 public class ReviewService {
 
@@ -19,12 +20,25 @@ public class ReviewService {
   }
 
   public List<CountOfProductReviewsDto> countOfReviews(){
-    return reviewDao.countOfReviews();
+
+    List<CountOfProductReviewsDto> countReviews = reviewDao.countOfReviews();
+
+    for(CountOfProductReviewsDto counts : countReviews )
+    {
+      if(  counts.getCountOfReview() < 1 )
+      {
+        counts.setCountOfReview(null);
+      }
+    }
+
+    return countReviews;
+
   }
 
   public List<UserReviewsDto> userReviews (long userId){
     return reviewDao.userReviews(userId);
   }
+
 
 
 }
