@@ -17,13 +17,13 @@
 How does one go about using it?
 Provide various use cases and code examples here.
 
-`Öncelikle n11_bootcamp adında bir veritabanı oluşturulmalı ve hibernatecfg.xml deki konfigürasyonlar özelleştirilmelidir.`
+`Öncelikle n11_bootcamp adında bir veritabanı oluşturulmalı ve resources klasöründeki hibernatecfg.xml deki konfigürasyonlar özelleştirilmelidir.`
 
 `Projeyi klonladıktan sonra tabloları oluşturması amacıyla herhangi bir application'da 1 kere çalıştırmalıdır.`
 
 `Daha sonra hibernatecfg.xml üzerinde "<property name="hibernate.hbm2ddl.auto">create</property>" create kısmı update olarak değiştirilmelidir.`
 
-`Veritabanına ise gerekli dataları setlemek için all_data_instert.sql 'deki datalar veritabanındaki query tool üzerinde çalıştırılmalıdır.`
+`Veritabanına ise gerekli dataları setlemek için resources klasöründeki all_data_instert.sql ' da bulunan datalar veritabanındaki query tool üzerinde çalıştırılmalıdır.`
 
 `Daha sonra Intelij Idea üzerinde applicationlar çalıştırılabilir. `
 
