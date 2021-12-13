@@ -17,7 +17,7 @@
 
 ## Kullanım
 
-`Öncelikle n11_bootcamp adında bir veritabanı oluşturulmalı ve resources klasöründeki hibernatecfg.xml deki konfigürasyonlar özelleştirilmelidir.`
+`Öncelikle n11_bootcamp adında bir veritabanı oluşturulmalı ve resources klasöründeki hibernatecfg.xml deki konfigürasyonlar( şifre ve kullanıcı adı) özelleştirilmelidir.`
 
 `Projeyi klonladıktan sonra tabloları oluşturması amacıyla herhangi bir application'da 1 kere çalıştırmalıdır.`
 
